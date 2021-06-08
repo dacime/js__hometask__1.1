@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js_1.1.css">
+</head>
+<body>
+    <div class="container">
+    <h1 style="color: white; text-align: center;">Первое Домашнее задание:</h1>
+
+    <div class="jsjsjs"><script src="js_1.1.js"></script></div>
+    
+    <h2 style="color: white">Отличия между async и defer атрибутами тега script: </h2> <br>
+
+    <h4 style="color: white">DOMContentLoaded - событие, обозначающее полную загрузку страницы.</h4> <br>
+    <h3 style="color: white; text-align: center;"><strong>async:</strong></h3>
+    <p style="border: 1px solid aqua;">Порядок загрузки скрипта: какой скрипт быстрее загрузится - тот и сработает первым. <br>
+    Относительно DOMContentLoaded - не имеет значения. Может загрузиться и выполниться до того, как страница полностью загрузится. Такое случается, если скрипты маленькие или хранятся в кэше, а документ достаточно большой.
+    </p>
+    <br>
+    <h3 style="color: white; text-align: center;"><strong>defer:</strong></h3>
+    <p style="border: 1px solid aqua;">Порядок загрузки скрипта: в том порядке - как расположены в документе. <br>
+    Относительно DOMContentLoaded - Выполняется после того, как документ загружен и обработан (ждёт), непосредственно перед DOMContentLoaded.
+    </p>
+    </div>
+</body>
+</html>
